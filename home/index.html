@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    a{
+      color: inherit;
+    }
+    .myDiv {
+
+      background-color: #907956;
+      font-size: 13;
+      color: white;
+      padding-top: 1px;
+      padding-bottom: 1px;
+      text-align: center;
+
+    }
+
+    .navbar {
+      height: max-content;
+      background-color: black;
+      padding: 3px;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      padding: 12px;
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .navbar a:hover {
+      background-color: #000;
+    }
+
+    .navbar li {
+      float: left;
+    }
+
+    .navbar li img {
+      height: 1cm;
+    }
+
+
+
+    .Text {
+
+      background-color: #030648;
+
+      height: 1.5cm;
+      font-size: 12pt;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      text-align: center;
+
+    }
+
+    .Text p {
+      font-size: 9pt;
+
+    }
+
+    .icon {
+      float: inline-end;
+    }
+    
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+      }
+    }
+
+    .container {
+      position: relative;
+      color: rgb(16, 15, 15);
+    }
+
+    .bottom-left {
+
+      position: absolute;
+      bottom: 200px;
+      color: black;
+      left: 40px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 300%;
+    }
+
+    .bottom-left p {
+      font-size: 60%;
+      text-align: center;
+    }
+
+    .container .btn {
+      position: absolute;
+      top: 4.3cm;
+      left: 2cm;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: black;
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+
+      text-align: center;
+    }
+
+    .container .btn1 {
+      position: absolute;
+      top: 4.3cm;
+      left: 5.5cm;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: black;
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+
+      text-align: center;
+    }
+
+    .container .btn2 {
+      position: absolute;
+      top: 4.3cm;
+      left: 9cm;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: black;
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+
+      text-align: center;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+
+    }
+
+    .video {
+      width: 100%;
+    }
+
+    .text-overlay {
+
+      position: absolute;
+      bottom: 5cm;
+      left: 1cm;
+      width: 100%;
+      text-align: left;
+
+    }
+
+    .left-bottom {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 50px;
+      color: rgb(9, 8, 8);
+      /* Adjust the color as needed */
+      margin: 10px;
+    }
+
+    .left-bottom p {
+      font-size: 29px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .left-bottom .btn {
+      position: absolute;
+      top: 4.3cm;
+      left: 2cm;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: black;
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+
+      text-align: center;
+    }
+
+
+
+    .outer {
+      text-align: center;
+      display: inline-flexbox;
+
+    }
+
+    .outer img {
+      border-radius: 100%;
+    }
+
+    .outer .fix {
+      width: 100%;
+      height: 3cm;
+
+    }
+
+    .table {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .video-container1 {
+
+      height: 5cm;
+    }
+
+    .text-overlay .btn1 {
+      background-color: white;
+      color: #000;
+      border: 0cm;
+      width: 3cm;
+      height: 1.5cm;
+    }
+
+    .left-bottom1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 50px;
+      color: rgb(246, 241, 241);
+      /* Adjust the color as needed */
+      margin: 10px;
+    }
+
+    .POPULAR {
+      font-size: 50%;
+    }
+
+    .text-overlay1 {
+
+      position: absolute;
+
+      text-align: center;
+
+    }
+
+
+    .containerimg {
+      position: relative;
+      color: rgb(16, 15, 15);
+    }
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      bottom: 200px;
+      color: rgb(245, 232, 232);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 200%;
+    }
+
+    .centered p {
+      font-size: 60%;
+      text-align: center;
+    }
+
+    .centered .btn1 {
+
+      height: 1.5cm;
+      width: 3cm;
+
+    }
+
+    .flex-container {
+      display: flex;
+      background-color: rgb(247, 250, 253);
+    }
+
+    .flex-container>div {
+      background-color: #f1f1f1;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+    }
+    .footer{
+      width: 100%;
+      background-color: #000;
+      color: white;
+    }
+    .footer th{
+      padding: 30px;
+    }
+    .footer td{
+      padding: 5px;
+    }
+    .table{
+      column-gap: 40px;
+    }
+  </style>
+  <title>puma</title>
+</head>
+
+<body style="background-color: white;">
+
+  <div class="myDiv">
+    <p id="text1">FREE DELIVERIES.FREE RETURNS.</b></p>
+    <p id="text2" style="display:none;"><b>EXTRA 50% DISCOUNT FOR ALL ONLINE PAYMENTS(EXCLUDING FENTY x PUMA)</b></p>
+    <p id="text3" style="display:none;"><b>CATCH THE #PUMADive <a><u>CLICK TO KNOW MORE</u></a></b></p>
+  </div>
+  <div class="navbar">
+    <ul>
+      <p>
+        <li><a href="#home"><img src="image\pumasymbol.png"></a> </li>
+        <li><a href="#home"><b>New</b></a></li>
+        <li><a href="#news"><b>Women</b></a></li>
+        <li><a href="#contact"><b>Men</b></a></li>
+        <li><a href="#about"><b>Kids</b></a></li>
+        <li><a href="#about"><b>FENTYxPUMA</b></a></li>
+        <li><a href="#about"><b>Motorsport</b></a></li>
+        <li><a href="#about"><b>Collaborations</b></a></li>
+        <li><a href="#about"><b>Sports</b></a></li>
+        <li><a href="#about"><b>Outlet</b></a></li>
+      </p>
+      <div class="icon">
+        <a href="#"><i class="fa fa-fw fa-search"></i>SEARCH</a>
+        <a href="#"><i style="font-size:20px" class="fa">&#xf08a;</i></a>
+        <a href="#"><i style="font-size:20px;color:rgb(253, 253, 253)" class="fa">&#xf07a;</i>
+        </a>
+        <a href="#"><i style="font-size:20px;color:rgb(253, 253, 253)" class="fa">&#xf2c0;</i>
+        </a>
+
+
+      </div>
+    </ul>
+
+  </div>
+  <div class="Text">
+    <b>EXTRA 15% OFF ON ORDERS ABOVE 3499</b>
+    <br>
+
+    <p>Discount auto applied at checkout</p>
+  </div>
+
+  <div class="container">
+
+    <img src="image\puma.png" alt="Trulli" width="100%" height="700">
+    <div class="bottom-left"><b>NEW & TRENDING</b>
+      <p>LEVEL UP YOUR STYLE GAME</p>
+      <button class="btn"><b>MEN</b></button>
+      <button class="btn1"><b>WOMEN</b></button>
+      <button class="btn2"><b>KIDS</b></button>
+    </div>
+  </div>
+  <br>
+  <div class="video-container">
+    <video class="video" autoplay="" controlslist="nodownload nofullscreen" disablepictureinpicture=""
+      disableremoteplayback="" playsinline="" loop="" muted="">
+      <source src="https://cdn.sanity.io/files/qa41whrn/staging/e073e9b8e32e5479801dff7508be61ef41944df6.mp4">
+    </video>
+    <div class="text-overlay">
+      <div class="left-bottom"><b>FENTYxPUMA</b>
+        <p><em>THE AVANTI BY RIHANNA</em></p>
+        <button class="btn"><b>SHOP NOW</b></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="outer">
+    <table align="center">
+      <tr>
+        <td><img src="image\motorsport.png" width="100px" height="100px">
+          <h4>MOTORSPORT</h4>
+        </td>
+        <td>
+          <img src="image\partysneakers.png" width="100px" height="100px" />
+          <h4>PARTY SNEAKERS</h4>
+        </td>
+        <td>
+          <img src="image\pumaoutlet.png" width="100px" height="100px" />
+          <h4>STYLES AT<br>SPECIAL PRICES</h4>
+        </td>
+        <td>
+          <img src="image\terraceshoes.png" width="100px" height="100px" />
+          <h4>TERRACE<br> SHOES</h4>
+        </td>
+        <td>
+          <img src="image\nitro.png" width="100px" height="100px" />
+          <h4>NITRO<br> RUNNING</h4>
+        </td>
+      </tr>
+      <span class="fix"></span>
+    </table>
+  </div>
+  <br>
+  <div class="video-container">
+    <video class="video" autoplay="" controlslist="nodownload nofullscreen" disablepictureinpicture=""
+      disableremoteplayback="" playsinline="" loop="" muted="">
+      <source src="https://cdn.sanity.io/files/qa41whrn/staging/61ff79512e36b822cdf88f9abed486a9363a1bd6.mp4">
+    </video>
+    <div class="text-overlay">
+      <div class="left-bottom1"><b>
+          <p>MB.03 CHINO HILLS</p>
+        </b>
+        <p><em>BY LAMELO BALL</em></p>
+        <button class="btn1"><b>SHOP NOW</b></button>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="containerimg">
+
+    <img src="image\kohli.png" alt="Trulli" width="100%" height="500">
+    <div class="centered"><b>MAKE STATEMENTS</b>
+      <p>BREAK RECORDS</p>
+      <p>Collection worn by Virat Kohli</p>
+      <center>
+        <button class="btn1"><b>SHOP NOW</b></button>
+      </center>
+    </div>
+  </div>
+  <br>
+  <div class="flex-container">
+    <div><a href="#"><img src="image\puma1.png"></a>
+      <h6><i>UNISEX SNEAKERS<BR>1599</i></h6>
+    </div>
+    <div><a href="#"><img src="image\puma2.png"></a>
+      <h6><i>Mens SHOES<BR>4599</i></h6>
+    </div>
+    <div><a href="#"><img src="image\puma3.png"></a>
+      <h6><i>SPORTS SHOES<BR>6599</i></h6>
+    </div>
+    <div><a href="#"><img src="image/puma4.png"></a>
+      <h6><i>BLACK SHOES<BR>5599</i></h6>
+    </div>
+    <div><a href="#"><img src="image/puma5.png"></a>
+      <h6><i>MENS BLACK SHOES<BR>2099</i></h6>
+    </div>
+    <div><a href="#"><img src="image/puma6.png"></a>
+      <h6><i>PORTS SHOES<BR>1999</i></h6>
+    </div>
+  </div>
+<div class="footer">
+  <div class="table">
+<table>
+  <tr>
+  <th>SUPPORT</th><th> </th>
+  <th>    </th><th>  </th><th> </th><td> </td>
+  <th>ABOUT</th>
+  </tr>
+  <tr><td><a style="text-decoration: none;" href="#">Contact Us</a></td>
+    <td>    </td><td> </td>
+    <td><a style="text-decoration: none;" href="#">FAQs</a></td>
+    <td>    </td><td> </td>
+    <td><a style="text-decoration: none;" href="#">Company</a></td>
+    <td>    </td><td> </td><td> </td>
+  
+  </tr>
+  <tr><td><a style="text-decoration: none;" href="#">Promotions & sales</a></td>
+    <td>    </td><td> </td>
+    <td><a style="text-decoration: none;" href="#">My account</a></td>
+    <td>    </td><td> </td>
+    <td><a style="text-decoration: none;" href="#">Corporate News</a></td>
+    <td>    </td><td> </td>
+  </tr>
+  <tr><td><a style="text-decoration: none;" href="#">Track Order</a></td>
+    <td>    </td><td> </td>
+    <td><a style="text-decoration: none;" href="#">Return Policy</a></td>
+    <td>    </td><td> </td>
+    <td><a style="text-decoration: none;" href="#">Press Center</a></td>
+    <td>    </td><td> </td>
+  </tr>
+  <tr><td><a style="text-decoration: none;" href="#">Privacy Policy</a></td>
+    <td>    </td><td> </td>
+    <td><a style="text-decoration: none;" href="#">Tech Glossary</a></td>
+    <td>    </td><td> </td>
+    <td><a style="text-decoration: none;" href="#">Investors</a></td>
+    <td>    </td><td> </td>
+  </tr>
+  <tr><td><a style="text-decoration: none;" href="#">Terms&Conditions</a></td>
+    <td>    </td><td> </td>
+    <td><a style="text-decoration: none;" href="#">Initiate Return</a></td>
+    <td>    </td><td> </td>
+    <td><a style="text-decoration: none;" href="#">Sustainability</a></td>
+    <td>    </td><td> </td>
+    </tr>
+    <tr><td><a style="text-decoration: none;" href="#">Cookies Settings</a></td>
+      <td>    </td><td> </td>
+      <td><a style="text-decoration: none;" href="#">        </a></td>
+      <td>    </td><td> </td>
+      <td><a style="text-decoration: none;" href="#">Careers</a></td>
+      <td>    </td><td> </td>
+      </tr>
+      <tr><td><a style="text-decoration: none;" href="#">       </a></td>
+        <td>    </td><td> </td>
+        <td><a style="text-decoration: none;" href="#">         </a></td>
+        <td>    </td><td> </td>
+        <td><a style="text-decoration: none;" href="#">Store Finder</a></td>
+        <td>    </td><td> </td>
+        </tr>
+        <tr><td><a style="text-decoration: none;" href="#">          </a></td>
+          <td>    </td><td> </td>
+          <td><a style="text-decoration: none;" href="#">          </a></td>
+          <td>    </td><td> </td>
+          <td><a style="text-decoration: none;" href="#">PUMA DNA</a></td>
+          <td>    </td><td> </td>
+  </tr>
+ 
+
+
+  </div>
+</table>
+
+
+</div>
+</div>
+  </div>
+  <script>
+
+    const texts = ['text1', 'text2', 'text3'];
+    let currentIndex = 0;
+
+    function showNextText() {
+      document.getElementById(texts[currentIndex]).style.display = 'none';
+      currentIndex = (currentIndex + 1) % texts.length;
+      document.getElementById(texts[currentIndex]).style.display = 'block';
+    }
+
+
+    document.getElementById(texts[currentIndex]).style.display = 'block';
+
+
+    setInterval(showNextText, 2000);
+  </script>
+
+</body>
+
+</html>
